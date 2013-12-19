@@ -35,7 +35,7 @@
         case 'b3':
           $gdContainer.addClass("container");
           $gdRow.addClass("row");
-          $gdColumn.addClass("col-lg-1").filter(":odd").addClass("dontshow"); // 0-based indexing means that, counter-intuitively, :odd selects the 2th element, 4th element, ...    
+          $gdColumn.addClass("col-sm-1").filter(":odd").addClass("dontshow"); // 0-based indexing means that, counter-intuitively, :odd selects the 2th element, 4th element, ...    
           hasBorder = true;
           $gdTools.find(".twb").css("display", "inline-block");
         break;
