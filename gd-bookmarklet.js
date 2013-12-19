@@ -35,7 +35,7 @@
         case 'b3':
           $gdContainer.addClass("container");
           $gdRow.addClass("row");
-          $gdColumn.addClass("col-sm-1").filter(":odd").addClass("dontshow"); // 0-based indexing means that, counter-intuitively, :odd selects the 2th element, 4th element, ...    
+          $gdColumn.addClass("col-lg-1 col-md-1 col-sm-1 col-xs-1").filter(":odd").addClass("dontshow"); // 0-based indexing means that, counter-intuitively, :odd selects the 2th element, 4th element, ...    
           hasBorder = true;
           $gdTools.find(".twb").css("display", "inline-block");
         break;
@@ -117,9 +117,9 @@
       dataGridOpacity       = $("body").data("grid-opacity"),
       dataGridZindex        = $("body").data("grid-zindex"),
       
-      gdFramework           = (typeof dataGridFramework === "undefined") ? "" : dataGridFramework,
+      gdFramework           = (typeof dataGridFramework === "undefined") ? "b3" : dataGridFramework,
       gdNbcols              = (typeof dataGridNbcols === "undefined") ?    "12" : dataGridNbcols,
-      gdColor               = (typeof dataGridColor === "undefined") ?     "black" : dataGridColor,
+      gdColor               = (typeof dataGridColor === "undefined") ?     "red" : dataGridColor,
       gdOpacity             = (typeof dataGridOpacity === "undefined") ?   "0.3" : dataGridOpacity,
       gdZindex              = (typeof dataGridZindex === "undefined") ?    "999" : dataGridZindex;
       
