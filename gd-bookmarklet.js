@@ -123,6 +123,8 @@
       gdOpacity             = (typeof dataGridOpacity === "undefined") ?   "0.3" : dataGridOpacity,
       gdZindex              = (typeof dataGridZindex === "undefined") ?    "999" : dataGridZindex;
       
+      alert($("body").data("grid-nbcols"));
+      
       // HTML
       var gridHtml = "<div id=\"grid-displayer\" style=\"display: none;\"><div class=\"gd-container\"><div class=\"gd-row\"></div></div></div>",
       frameworks = {"b3": "NEW Bootstrap 3",
